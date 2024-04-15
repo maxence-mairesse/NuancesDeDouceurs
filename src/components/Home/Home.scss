@@ -1,0 +1,15 @@
+.Home{
+  .Carrousel{
+
+img{
+  filter: blur(0.2em);
+}
+    height: calc(100vh - 100px);
+    h2{
+      font-family: "Encode Sans", serif;
+      text-shadow: 0 4px 5px rgb(0, 0, 0);
+      font-weight: 300;
+    }
+
+  }
+}

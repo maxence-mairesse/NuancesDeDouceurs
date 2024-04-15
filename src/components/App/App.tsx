@@ -1,28 +1,25 @@
-import logo from '../../assets/logo.svg';
+import '../../../public/style/index.css';
 import './App.scss';
 // eslint-disable-next-line import/order
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../Home/Home';
+// eslint-disable-next-line import/extensions
+import Header from '../Header/Header';
+import Error from '../Error/Error';
+import RendezVous from '../RendezVous/RendezVous';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Nuances de douceurs</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>
-          Edit <code>src/components/App/App.jsx</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://react.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/rendez-vous" element={<RendezVous />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
       <SpeedInsights />
     </div>
   );
