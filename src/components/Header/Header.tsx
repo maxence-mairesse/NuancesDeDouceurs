@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@material-tailwind/react';
 import { openMenu, CloseMenu } from '../../store/Actions/homeAction';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import logo from '../../../public/img/plume_2.png';
+import logo from '../../assets/img/plume_2.png';
 import { data, DataType } from '../../data/data';
 import '../../../public/style/index.css';
 import './Header.scss';
