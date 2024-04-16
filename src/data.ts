@@ -3,7 +3,7 @@ export const data = [
     id: 1,
     title: 'Une esthéticienne qui prend soin de vous',
     description: 'Description',
-    image: '/../src/assets/img/me-decouvrir.jpeg',
+    image: '../img/me-decouvrir.png',
     links: {
       title: 'Me découvrir',
       link: '/galerie',
@@ -13,7 +13,7 @@ export const data = [
     id: 2,
     title: 'Envie de detétente et de bien être ?',
     description: 'Description',
-    image: '/../src/assets/img/masque-boue.jpeg',
+    image: '../img/masque-boue.png',
     links: {
       title: 'Prendre rendez-vous',
       link: '/rendez-vous',
@@ -23,7 +23,7 @@ export const data = [
     id: 3,
     title: 'Découvrez les soins',
     description: 'Description',
-    image: '/../src/assets/img/palette-maquillage.jpeg',
+    image: '../img/palette-maquillage.png',
     links: {
       title: 'La carte des soins',
       link: '/carte-soins',

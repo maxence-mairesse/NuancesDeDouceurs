@@ -2,7 +2,7 @@ import { Button, Carousel, Typography } from '@material-tailwind/react';
 import type { CarouselProps } from '@material-tailwind/react';
 import { Link } from 'react-router-dom';
 import BlockTypo from './BlockTypo';
-import { data, DataType } from '../../data/data';
+import { data, DataType } from '../../data';
 
 const Carrousel = () => {
   return (
