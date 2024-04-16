@@ -3,7 +3,7 @@ export const data = [
     id: 1,
     title: 'Une esthéticienne qui prend soin de vous',
     description: 'Description',
-    image: '../img/me-decouvrir.png',
+    image: './img/me-decouvrir.png',
     links: {
       title: 'Me découvrir',
       link: '/galerie',
