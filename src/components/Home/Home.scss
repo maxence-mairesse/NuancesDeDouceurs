@@ -12,4 +12,26 @@ img{
     }
 
   }
+
+  .infos{
+    padding-top: 1em;
+    font-family: "Italiana", serif;
+
+    font-size: 34px;
+    color: black;
+    height: 300px;
+    background-color: #c6a97b;
+    h3{
+
+      span{
+        color: #0073ad;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    h3{
+      font-size: 40px;
+    }
+  }
 }
