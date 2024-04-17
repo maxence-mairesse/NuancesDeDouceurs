@@ -1,27 +1,33 @@
-footer{
+footer {
   padding: 1em 0em;
   width: 100%;
   min-height: 70px;
   background-color: #323232;
-  font-family: "Italiana",sans-serif;
+  font-family: "Italiana", sans-serif;
   letter-spacing: 2px;
   font-size: 0.5em;
   font-weight: 600;
-  div{
-    padding-top:2em
+
+  div {
+    padding-top: 1em
   }
-.legal{
+
+  .legal {
     display: flex;
     text-align: center;
-  color: #ffffff;
-  *{
-    width: 50%;
+    color: #ffffff;
+
+    * {
+      width: 50%;
+    }
   }
-  }
-  .facebook{
+
+  .facebook {
     text-align: center;
     color: #ffffff;
-    .link{color: #565656
+
+    .link {
+      color: #565656
     }
   }
 }
