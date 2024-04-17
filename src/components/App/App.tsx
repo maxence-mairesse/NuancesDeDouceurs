@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 import Error from '../Error/Error';
 import RendezVous from '../RendezVous/RendezVous';
 import Footer from '../Footer/Footer';
+import Carte from '../Carte/Carte';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rendez-vous" element={<RendezVous />} />
+        <Route path="/carte-soins" element={<Carte />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
