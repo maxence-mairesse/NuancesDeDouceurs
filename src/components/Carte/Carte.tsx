@@ -11,7 +11,7 @@ const Carte = () => {
   const StateCategories: [{ id: number | null; name: string }] = useAppSelector(
     (state) => state.CategoryReducer.ArrayCategory
   );
-
+  const menuHeader = useAppSelector((state) => state.HomeReducer.menuIsOpen);
   const Presations: [
     {
       id: number | null;
@@ -33,16 +33,16 @@ const Carte = () => {
 
   return (
     <div className="Carte">
-      <div className="img-cover">
+      <div className={menuHeader ? 'h-full' : 'img-cover'}>
         <img src={soins} alt="photocouverture" />
-        <h2>La carte des soins</h2>
+        <h2 className={menuHeader ? 'cache' : ''}>La carte des soins</h2>
       </div>
       <ul>
         {StateCategories.map((item: { id: any; name: string }) => {
           return (
-            <li key={item.id} className="test">
+            <li key={item.id} className={menuHeader ? 'cache' : ''}>
               <div
-                className="title-category"
+                className={menuHeader ? 'cache' : 'title-category'}
                 onClick={() => {
                   dispatch(openCarteMenu(item.id));
                 }}
@@ -59,7 +59,11 @@ const Carte = () => {
 
               <div
                 className={
-                  menuOpen[item.id] ? 'category-open' : 'category-close'
+                  menuHeader
+                    ? 'cache'
+                    : menuOpen[item.id]
+                    ? 'category-open'
+                    : 'category-close'
                 }
               >
                 {/* Liste la liste des prestation */}

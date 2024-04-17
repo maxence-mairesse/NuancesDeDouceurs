@@ -2,6 +2,9 @@
   width: 100%;
   min-height: calc(100vh - 170px);
   margin-bottom: 2em;
+.cache{
+  opacity: 0 !important;
+}
 
   .img-cover {
     position: relative;
@@ -26,7 +29,7 @@
   }
 
   .category {
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.3s;
     font-family: "Italiana", serif;
     font-size: 24px;
   }
@@ -41,7 +44,7 @@
   ul {
     position: relative;
     opacity: 1;
-    transition: ease-in 0.5s;
+    transition: ease-in 0.3s;
     text-align: center;
 
     li {
@@ -49,7 +52,7 @@
 
       margin-top: 2em;
       opacity: 1;
-      transition: ease-in 2.5s;
+      transition: ease-in 0.3s;
 
       .title-category {
 
@@ -65,13 +68,13 @@
       .category-close {
         opacity: 0;
         display: none;
-        transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.3s;
       }
 
       .category-open {
         opacity: 1;
         display: block;
-        transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.3s;
       }
 
       .prestation {
