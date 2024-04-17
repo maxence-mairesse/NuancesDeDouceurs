@@ -52,7 +52,7 @@ const Header = () => {
 
       <nav className={isOpen ? 'navlinks' : 'hidden'}>
         <ul className="Header__menu">
-          <li>
+          <li onClick={HandleCloseMenu}>
             <Link to="/">Accueil</Link>
           </li>
           {data.map((item: DataType) => {

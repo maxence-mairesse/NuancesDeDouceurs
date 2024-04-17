@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import './RendezVous.scss';
+import { useAppSelector } from '../../hooks/redux';
 
 const RendezVous = () => {
+  const MenuIsOpen = useAppSelector((state) => state.HomeReducer.menuIsOpen);
   return (
-    <div className="container">
+    <div className={MenuIsOpen ? 'cache' : 'container'}>
       <div className="infos">
         <h2 className="title">Prendre un Rendez-vous</h2>
         <div className="info">
