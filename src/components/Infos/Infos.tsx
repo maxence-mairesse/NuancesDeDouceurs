@@ -3,7 +3,7 @@ import './infos.scss';
 const Infos = () => {
   return (
     <div className="info">
-      <h3>Nouvelles prestations !</h3>
+      <h4>Nouvelles prestations !</h4>
       <ul>
         <li>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { Button } from '@material-tailwind/react';
 import { useEffect, useRef } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { fetchCategory } from '../../store/Thunks/categories';
@@ -85,7 +87,9 @@ const Carte = () => {
                               <p>{item2.price} €</p>
                             </div>
                             <div className="description">
-                              <p>{`${item2.description}: `} </p>
+                              <p className="desc">
+                                {`${item2.description}: `}{' '}
+                              </p>
                               <p className="time"> {item2.time} min</p>
                             </div>
                           </li>
@@ -100,6 +104,16 @@ const Carte = () => {
           );
         })}
       </ul>
+
+      <Button
+        variant="outlined"
+        className="mt-10"
+        placeholder={undefined}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      >
+        <Link to="/rendez-vous">Prendre Rendez-vous</Link>
+      </Button>
     </div>
   );
 };

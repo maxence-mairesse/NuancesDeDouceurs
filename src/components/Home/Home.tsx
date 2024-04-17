@@ -1,7 +1,10 @@
 import '../../../public/style/index.css';
 import './Home.scss';
+import { Button } from '@material-tailwind/react';
+import { Link } from 'react-router-dom';
 import Carrousel from '../Carrousel/Carrousel';
 import Infos from '../Infos/Infos';
+import RendezVous from '../RendezVous/RendezVous';
 
 const Home = () => {
   return (
@@ -9,17 +12,13 @@ const Home = () => {
       <div className="Carrousel">
         <Carrousel />
       </div>
-      <div className="infos">
-        <h3>
-          <span>
-            <i className="fa-solid fa-triangle-exclamation" />
-          </span>{' '}
-          Annonces{' '}
-          <span>
-            <i className="fa-solid fa-triangle-exclamation" />
-          </span>
-        </h3>
+      <div className="infoss">
+        <h3>News </h3>
         <Infos />
+      </div>
+
+      <div className="rendezVous">
+        <RendezVous />
       </div>
     </div>
   );

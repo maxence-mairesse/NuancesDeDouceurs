@@ -9,9 +9,12 @@
   .img-cover {
     position: relative;
     height: 200px;
-    object-fit: cover;
+    width: 100vw;
     overflow: hidden;
-    object-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     h2 {
       font-family: "Encode Sans", "Helvetica Neue", serif;
@@ -99,10 +102,10 @@
       .description {
         display: flex;
 
-        font-family: "Italiana", sans-serif;
+       font-family: "Inria Serif",serif;
         font-size: 15px;
 
-        p {
+        .desc {
           margin-top: 5px;
           margin-left: 2.3em;
           color: #020202;
@@ -110,7 +113,8 @@
         }
 
         .time {
-          margin-left: 0.3em;
+          margin-top: 5px;
+          margin-left: 0.3em !important;
         }
       }
     }
@@ -120,7 +124,7 @@
 
   @media (min-width: 768px) {
     .img-cover {
-      height: 400px;
+      height: 300px;
 
       h2 {
         top: 186px;
@@ -144,15 +148,24 @@
   }
 
   @media (min-width: 1024px) {
+    .title-category{
+      h3{
+        font-size: 28px;
+      }
+    }
     .img-cover {
-      height: 600px;
+      height: 400px;
+      img{
+        object-fit: contain;
+      }
 
       h2 {
-        top: 286px;
+        top: 186px;
         font-size: 48px;
       }
     }
     ul {
+
       li {
         .category-open {
           margin-left: 0;
@@ -161,8 +174,19 @@
           flex-wrap: wrap;
 
           ul {
-            max-width: 50%;
-            min-width: 50%;
+           li{
+             .prestation{
+              h4{font-size: 24px;}
+               p{
+                 font-size: 24px;
+               }
+
+             }
+             .description{
+               p{margin-left: 3.5em}
+             }
+             .time{margin-left:0.3em}
+           }
           }
         }
       }

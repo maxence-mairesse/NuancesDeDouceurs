@@ -1,5 +1,6 @@
 
 .Header {
+  background-color: white;
   position: relative;
   padding: 0.5em 1em;
   height: 100px;
@@ -9,7 +10,7 @@
 .btn-menu{
   position: absolute;
   left: 20px;
-  top:  25px;
+  top:  40px;
 }
   .Header__title a {
     margin: auto;
@@ -66,4 +67,18 @@
       }
     }
   }
+
+
+}
+@media (min-width: 1024px) {
+  .Header{
+    height: fit-content;
+    .navlinks{
+      top: 130.51px;
+    }
+  }
+  .title{
+    font-size: 1.8em;
+  }
+
 }
