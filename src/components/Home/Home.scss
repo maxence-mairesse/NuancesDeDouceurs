@@ -1,15 +1,45 @@
-.Home{
-  .Carrousel{
+.Home {
 
-img{
-  filter: blur(0.2em);
-}
+  .Carrousel {
+
+    img {
+      filter: blur(0.2em);
+    }
+
     height: calc(100vh - 100px);
-    h2{
+
+    h2 {
       font-family: "Encode Sans", serif;
       text-shadow: 0 4px 5px rgb(0, 0, 0);
       font-weight: 300;
     }
 
+  }
+
+  .infoss {
+    padding-top: 1em;
+    font-size: 34px;
+    color: black;
+    height: 300px;
+    background-color: #c6a97b;
+
+    h3 {
+      font-family: "Encode Sans", serif;
+
+      span {
+        color: #0073ad;
+      }
+    }
+  }
+
+
+
+}
+
+@media (min-width: 768px) {
+  .home {
+    h3 {
+      font-size: 40px;
+    }
   }
 }
