@@ -11,6 +11,7 @@ import Error from '../Error/Error';
 import RendezVous from '../RendezVous/RendezVous';
 import Footer from '../Footer/Footer';
 import Carte from '../Carte/Carte';
+import Galerie from '../Galerie/Galerie';
 
 function App() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/rendez-vous" element={<RendezVous />} />
         <Route path="/carte-soins" element={<Carte />} />
+        <Route path="/galerie" element={<Galerie />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
