@@ -1,12 +1,12 @@
 export const data = [
   {
     id: 1,
-    title: 'Une esthéticienne qui prend soin de vous',
+    title: 'Découvrez nos soins',
     description: 'Description',
-    image: './img/me-decouvrir.png',
+    image: '../img/palette-maquillage.png',
     links: {
-      title: 'galerie',
-      link: '/galerie',
+      title: 'La carte des soins',
+      link: '/carte-soins',
     },
   },
   {
@@ -21,12 +21,12 @@ export const data = [
   },
   {
     id: 3,
-    title: 'Découvrez les soins',
+    title: 'Explorez la galerie pour decouvrir nos réalisation',
     description: 'Description',
-    image: '../img/palette-maquillage.png',
+    image: './img/ongles.jpg',
     links: {
-      title: 'La carte des soins',
-      link: '/carte-soins',
+      title: 'galerie',
+      link: '/galerie',
     },
   },
 ];

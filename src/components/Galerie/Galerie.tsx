@@ -12,8 +12,7 @@ const Galerie = () => {
   return (
     <div className="galerie">
       <h2>Galerie</h2>
-      <div className="block" />
-      <div className="images">
+      <div className="images mobile">
         <div id="block-1" className="block-img block-1">
           <div className="block-big-img">
             {imgs.map((item) => {
@@ -50,7 +49,7 @@ const Galerie = () => {
         </div>
 
         <div id="block-2" className="block-img block-2">
-          <div>
+          <div className="block-big-img">
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
@@ -120,7 +119,7 @@ const Galerie = () => {
         </div>
 
         <div id="block-2" className="block-img block-2">
-          <div>
+          <div className="block-big-img">
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
@@ -190,7 +189,7 @@ const Galerie = () => {
         </div>
 
         <div id="block-2" className="block-img block-2">
-          <div>
+          <div className="block-big-img">
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
@@ -245,6 +244,183 @@ const Galerie = () => {
               const index: number = parseInt(item.name, 10);
 
               if (index > 31 && index < 36) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="small-img"
+                  />
+                );
+              }
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="images computer">
+        <div id="block-1" className="block-img block-1">
+          <div className="block-big-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index === 1) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="big-img"
+                  />
+                );
+              }
+            })}
+          </div>
+          <div className="block-small-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index > 1 && index < 12) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="small-img"
+                  />
+                );
+              }
+            })}
+          </div>
+        </div>
+
+        <div id="block-2" className="block-img block-2">
+          <div className="block-big-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index === 12) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="big-img"
+                  />
+                );
+              }
+            })}
+          </div>
+          <div className="block-small-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index > 12 && index < 23) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="small-img"
+                  />
+                );
+              }
+            })}
+          </div>
+        </div>
+
+        <div id="block-1" className="block-img block-1">
+          <div className="block-big-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index === 23) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="big-img"
+                  />
+                );
+              }
+            })}
+          </div>
+          <div className="block-small-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index > 23 && index < 34) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="small-img"
+                  />
+                );
+              }
+            })}
+          </div>
+        </div>
+
+        <div id="block-2" className="block-img block-2">
+          <div className="block-big-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index === 34) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="big-img"
+                  />
+                );
+              }
+            })}
+          </div>
+          <div className="block-small-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index > 34 && index < 45) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="small-img"
+                  />
+                );
+              }
+            })}
+          </div>
+        </div>
+
+        <div id="block-1" className="block-img block-1">
+          <div className="block-big-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index === 45) {
+                return (
+                  <img
+                    key={item.id}
+                    src={`./img/img-ongle/${item.name}.jpeg`}
+                    alt={item.name}
+                    className="big-img"
+                  />
+                );
+              }
+            })}
+          </div>
+          <div className="block-small-img">
+            {imgs.map((item) => {
+              const index: number = parseInt(item.name, 10);
+
+              if (index > 45 && index < 56) {
                 return (
                   <img
                     key={item.id}
