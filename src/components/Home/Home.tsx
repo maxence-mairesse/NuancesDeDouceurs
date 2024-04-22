@@ -8,12 +8,14 @@ import Infos from '../Infos/Infos';
 import RendezVous from '../RendezVous/RendezVous';
 import { useAppDispatch } from '../../hooks/redux';
 import { fetchNews } from '../../store/Thunks/prestations';
+import { fetchgalerie } from '../../store/Thunks/galerie';
 
 const Home = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchNews());
+    dispatch(fetchgalerie());
   }, [dispatch]);
   return (
     <div className="Home">
