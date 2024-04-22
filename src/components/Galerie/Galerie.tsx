@@ -35,7 +35,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 1 && index < 8) {
+              if (index > 1 && index < 6) {
                 return (
                   <img
                     key={item.id}
@@ -54,7 +54,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 8) {
+              if (index === 6) {
                 return (
                   <img
                     key={item.id}
@@ -70,7 +70,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 8 && index < 15) {
+              if (index > 6 && index < 11) {
                 return (
                   <img
                     key={item.id}
@@ -89,7 +89,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 15) {
+              if (index === 11) {
                 return (
                   <img
                     key={item.id}
@@ -105,7 +105,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 15 && index < 22) {
+              if (index > 11 && index < 16) {
                 return (
                   <img
                     key={item.id}
@@ -124,7 +124,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 22) {
+              if (index === 16) {
                 return (
                   <img
                     key={item.id}
@@ -140,7 +140,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 22 && index < 29) {
+              if (index > 16 && index < 21) {
                 return (
                   <img
                     key={item.id}
@@ -159,7 +159,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 30) {
+              if (index === 21) {
                 return (
                   <img
                     key={item.id}
@@ -175,7 +175,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 30 && index < 37) {
+              if (index > 21 && index < 26) {
                 return (
                   <img
                     key={item.id}
@@ -194,7 +194,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 38) {
+              if (index === 26) {
                 return (
                   <img
                     key={item.id}
@@ -210,7 +210,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 38 && index < 45) {
+              if (index > 26 && index < 31) {
                 return (
                   <img
                     key={item.id}
@@ -228,7 +228,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index === 46) {
+              if (index === 31) {
                 return (
                   <img
                     key={item.id}
@@ -244,7 +244,7 @@ const Galerie = () => {
             {imgs.map((item) => {
               const index: number = parseInt(item.name, 10);
 
-              if (index > 46 && index < 53) {
+              if (index > 31 && index < 36) {
                 return (
                   <img
                     key={item.id}
