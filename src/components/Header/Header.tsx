@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <div className="Header">
+    <div className={isOpen ? 'headerFix Header' : 'Header'}>
       <div className="btn-menu">
         <Button
           variant="outlined"
@@ -41,7 +41,7 @@ const Header = () => {
       </div>
 
       <div className="Header__title">
-        <Link to="/">
+        <Link to="/" onClick={HandleCloseMenu}>
           <img src={logo} alt="logo" />
           <h1 className="title">
             Nuances <br /> <span> de douceurs</span>
@@ -50,7 +50,7 @@ const Header = () => {
       </div>
       <div />
 
-      <nav className={isOpen ? 'navlinks' : 'hidden'}>
+      <nav className={isOpen ? 'navlinks ' : 'hidden'}>
         <ul className="Header__menu">
           <li onClick={HandleCloseMenu}>
             <Link to="/">Accueil</Link>

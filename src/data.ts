@@ -25,7 +25,7 @@ export const data = [
     description: 'Description',
     image: './img/ongles.jpg',
     links: {
-      title: 'galerie',
+      title: 'Galerie',
       link: '/galerie',
     },
   },
