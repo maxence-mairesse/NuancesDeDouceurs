@@ -51,8 +51,16 @@ const CategoryReducer = createReducer(initialState, (builder) => {
     })
     .addCase(fetchPrestations.fulfilled, (state, action) => {
       for (const stateElement of action.payload) {
-        const time = stateElement.time.split(':')[1];
-        stateElement.time = time;
+        const hour = parseInt(stateElement.time.split(':')[0]);
+        const min = parseInt(stateElement.time.split(':')[1]);
+
+        if (hour === 0) {
+          stateElement.time = `${min}min`;
+        } else if (hour > 0 && min > 0) {
+          stateElement.time = `${hour}h${min}`;
+        } else if (hour > 0) {
+          stateElement.time = `${hour}h`;
+        }
       }
 
       state.ArrayPrestations = action.payload;

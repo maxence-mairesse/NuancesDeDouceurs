@@ -8,3 +8,8 @@ export const fetchPrestations = createAsyncThunk(
     return response.data;
   }
 );
+
+export const fetchNews = createAsyncThunk('fetchNews', async () => {
+  const response = await instanceAxios.get('/prestations/news');
+  return response.data;
+});
