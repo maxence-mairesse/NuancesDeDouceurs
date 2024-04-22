@@ -11,7 +11,7 @@ const RendezVous = () => {
         <div className="info">
           <h3>
             <span>Tel:</span>
-            <Link to="tel:00.00.00.00.00">00.00.00.00.00</Link>
+            <Link to="tel:06.15.11.44.40">06.15.11.44.40</Link>
           </h3>
           <h3>
             <span>Facebook:</span>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@material-tailwind/react';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { fetchCategory } from '../../store/Thunks/categories';
 import { fetchPrestations } from '../../store/Thunks/prestations';
@@ -90,7 +90,7 @@ const Carte = () => {
                               <p className="desc">
                                 {`${item2.description}: `}{' '}
                               </p>
-                              <p className="time"> {item2.time} min</p>
+                              <p className="time"> {item2.time}</p>
                             </div>
                           </li>
                         </ul>
@@ -112,7 +112,7 @@ const Carte = () => {
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
       >
-        <Link to="/rendez-vous">Prendre Rendez-vous</Link>
+        <Link to="/rendez-vous">Contact</Link>
       </Button>
     </div>
   );

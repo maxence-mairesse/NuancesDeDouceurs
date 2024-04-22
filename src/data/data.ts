@@ -5,7 +5,7 @@ export const data = [
     description: 'Description',
     image: 'src/assets/img/me-decouvrir.jpeg',
     links: {
-      title: 'Me découvrir',
+      title: 'galerie',
       link: '/galerie',
     },
   },
