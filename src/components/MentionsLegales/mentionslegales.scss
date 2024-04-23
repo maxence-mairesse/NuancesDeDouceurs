@@ -1,0 +1,44 @@
+.mentions-legales{
+  min-height: calc(100vh - 235px);
+text-align: left;
+  margin: auto;
+  h2{
+    font-size: 28px;
+    color: #0C8A96;
+    font-family: "Inria Serif", sans-serif;
+    text-align: center;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 17px;
+    color: #0C8A96;
+    font-family: "Inria Serif", sans-serif;
+    margin: 0.5em;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    li{
+      display: inline-block;
+      margin: 0 1em;
+      font-family: "Inria Serif", sans-serif;
+      font-size: 13px;
+      color: #000000;
+      text-align: left;
+
+    }
+  }
+  p{
+    font-family: "Inria Serif", sans-serif;
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+    margin: 1em;
+  }
+
+
+  div{
+    margin: 2.5em;
+  }
+}

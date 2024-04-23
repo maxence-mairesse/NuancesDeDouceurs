@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="legal">
-        <Link to="/mention-legale">Mentions Légales</Link>
+        <Link to="/mentions-legales">Mentions Légales</Link>
       </div>
       <div className="facebook">
         Retrouvez-nous sur
