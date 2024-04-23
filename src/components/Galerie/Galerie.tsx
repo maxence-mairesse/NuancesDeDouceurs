@@ -472,7 +472,7 @@ const Galerie = () => {
         </div>
       </div>
       {selectedImg && (
-        <div className="fullscreen-image">
+        <div className="fullscreen-image" onClick={handleClose}>
           <div className="close" onClick={handleClose}>
             <i className="fa-solid fa-xmark" />
           </div>

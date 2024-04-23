@@ -21,10 +21,11 @@ display: flex;
       position:absolute;
       top:3vh;
       left:2vw;
+      font-size: 1.5em;
     }
     img{
-      width: 80%;
-      height: 80%;
+      width: 90%;
+
       aspect-ratio: 1/1;
     }
   }
@@ -180,8 +181,8 @@ display: flex;
   .fullscreen-image{
 
     img{
-      width: 700px !important;
-     height: 700px !important;
+      width: 500px !important;
+
 
     }
   }
@@ -304,6 +305,14 @@ display: flex;
 
 @media (min-width: 1920px) {
   .galerie {
+
+    .fullscreen-image{
+      img{
+        width: 50vw !important;
+
+
+      }
+    }
     .images {
       .block-img{
         .block-big-img{
