@@ -5,9 +5,6 @@ const Footer = () => {
   return (
     <footer>
       <div className="legal">
-        <Link to="/politque-confidentialite">
-          Politique de confidentiatlité
-        </Link>
         <Link to="/mention-legale">Mentions Légales</Link>
       </div>
       <div className="facebook">
