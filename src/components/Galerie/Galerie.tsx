@@ -1,14 +1,28 @@
 import './galerie.scss';
-import { useEffect } from 'react';
+import { MouseEventHandler, useEffect } from 'react';
 import { fetchgalerie } from '../../store/Thunks/galerie';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { closeImg, selectImg } from '../../store/Actions/galerieAction';
 
 const Galerie = () => {
   const dispatch = useAppDispatch();
   const imgs = useAppSelector((state) => state.GalerieReducer.img);
+  const handleclick: any = (name: any) => {
+    dispatch(selectImg(name));
+  };
+
+  const handleClose = () => {
+    dispatch(closeImg());
+  };
+
+  const selectedImg = useAppSelector(
+    (state) => state.GalerieReducer.selectedImg
+  );
+
   useEffect(() => {
     dispatch(fetchgalerie());
   }, [dispatch]);
+
   return (
     <div className="galerie">
       <h2>Galerie</h2>
@@ -25,6 +39,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -41,6 +56,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -60,6 +76,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -76,6 +93,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -95,6 +113,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -111,6 +130,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -130,6 +150,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -146,6 +167,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -165,6 +187,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -181,6 +204,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -200,6 +224,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -216,6 +241,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -234,6 +260,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -250,6 +277,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -257,7 +285,6 @@ const Galerie = () => {
           </div>
         </div>
       </div>
-
       <div className="images computer">
         <div id="block-1" className="block-img block-1">
           <div className="block-big-img">
@@ -271,6 +298,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -287,6 +315,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -306,6 +335,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -322,6 +352,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -341,6 +372,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -357,6 +389,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -376,6 +409,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -392,6 +426,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -411,6 +446,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="big-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -427,6 +463,7 @@ const Galerie = () => {
                     src={`./img/img-ongle/${item.name}.jpeg`}
                     alt={item.name}
                     className="small-img"
+                    onClick={() => handleclick(item.name)}
                   />
                 );
               }
@@ -434,6 +471,14 @@ const Galerie = () => {
           </div>
         </div>
       </div>
+      {selectedImg && (
+        <div className="fullscreen-image">
+          <div className="close" onClick={handleClose}>
+            <i className="fa-solid fa-xmark" />
+          </div>
+          <img src={`./img/img-ongle/${selectedImg}.jpeg`} alt="fullscreen" />
+        </div>
+      )}
     </div>
   );
 };

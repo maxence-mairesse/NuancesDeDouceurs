@@ -15,13 +15,13 @@ export const data = [
     description: 'Description',
     image: '../img/masque-boue.png',
     links: {
-      title: 'Prendre rendez-vous',
+      title: 'Contactez-nous',
       link: '/rendez-vous',
     },
   },
   {
     id: 3,
-    title: 'Explorez la galerie pour decouvrir nos réalisation',
+    title: 'Explorez la galerie pour decouvrir nos réalisations',
     description: 'Description',
     image: './img/ongles.jpg',
     links: {
