@@ -7,7 +7,10 @@ const RendezVous = () => {
   return (
     <div className={MenuIsOpen ? 'cache' : 'container'}>
       <div className="infos">
-        <h2 className="title">Prendre un Rendez-vous</h2>
+        <h2 className="title">
+          Pours plus d'informations ou pour avoir un rendez-vous
+        </h2>
+        <h3>contactez-nous sur: </h3>
         <div className="info">
           <h3>
             <span>Tel:</span>
@@ -23,7 +26,7 @@ const RendezVous = () => {
         </div>
       </div>
       <div className="horaires">
-        <h2>Mes Horaires</h2>
+        <h2>Horaires</h2>
         <p>Du Lundi au Samedi de 9h à 19h</p>
       </div>
     </div>
