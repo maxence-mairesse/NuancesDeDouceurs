@@ -87,10 +87,7 @@ const Carte = () => {
                               <p>{item2.price} €</p>
                             </div>
                             <div className="description">
-                              <p className="desc">
-                                {`${item2.description}: `}{' '}
-                              </p>
-                              <p className="time"> {item2.time}</p>
+                              <p className="time"> Durée: {item2.time}</p>
                             </div>
                           </li>
                         </ul>
